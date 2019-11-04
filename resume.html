@@ -2,25 +2,27 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>2018_周四川_简历</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<title>2018_周四川_简历</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; padding-bottom: 70px; overflow-x: visible; }
-.first-line-indent #write div, .first-line-indent #write li, .first-line-indent #write p { text-indent: 2em; }
-.first-line-indent #write div :not(p):not(div), .first-line-indent #write div.md-htmlblock-container, .first-line-indent #write p *, .first-line-indent pre { text-indent: 0px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
-#write > blockquote:first-child, #write > div:first-child, #write > figure:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > ul:first-child { margin-top: 30px; }
-#write li > figure:first-child { margin-top: -20px; }
+#write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; }
 button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
@@ -28,6 +30,7 @@ input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px;
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
 h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
@@ -48,8 +51,9 @@ figure > table { margin: 0px !important; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 80px; }
+table.md-table td { min-width: 32px; }
 .CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -79,32 +83,31 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
-  #write { margin-top: 0px; border-color: transparent !important; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
   .typora-export #write::after { height: 0px; }
-  @page { margin: 20mm 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
-p > img:only-child { display: block; margin: auto; }
-p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
 .md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { }
+.md-toc-inner:hover { text-decoration: underline; }
 .md-toc-inner { display: inline-block; cursor: pointer; }
 .md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
 .md-toc-h2 .md-toc-inner { margin-left: 2em; }
@@ -128,20 +131,23 @@ kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
 .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
 .MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
 
 
 :root {
@@ -149,35 +155,7 @@ iframe { max-width: 100%; width: 100%; border: none; }
     --control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Open Sans Regular'),url('file:///Users/drowtram/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Open Sans Italic'),url('file:///Users/drowtram/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Open Sans Bold'),url('file:///Users/drowtram/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Open Sans Bold Italic'),url('file:///Users/drowtram/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff')
-}
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
 html {
     font-size: 16px;
@@ -189,11 +167,10 @@ body {
     line-height: 1.6;
 }
 
-#write{
+#write {
     max-width: 860px;
   	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
-	padding-top: 20px;
+  	padding: 30px;
     padding-bottom: 100px;
 }
 #write > ul:first-child,
@@ -201,12 +178,6 @@ body {
     margin-top: 30px;
 }
 
-body > *:first-child {
-    margin-top: 0 !important;
-}
-body > *:last-child {
-    margin-bottom: 0 !important;
-}
 a {
     color: #4183C4;
 }
@@ -229,7 +200,6 @@ h3:hover a.anchor,
 h4:hover a.anchor,
 h5:hover a.anchor,
 h6:hover a.anchor {
-    /*background: url("file:///Users/drowtram/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
     text-decoration: none;
 }
 h1 tt,
@@ -304,42 +274,6 @@ hr {
     box-sizing: content-box;
 }
 
-body > h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-body > h1:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0;
-}
-body > h3:first-child,
-body > h4:first-child,
-body > h5:first-child,
-body > h6:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-a:first-child h1,
-a:first-child h2,
-a:first-child h3,
-a:first-child h4,
-a:first-child h5,
-a:first-child h6 {
-    margin-top: 0;
-    padding-top: 0;
-}
-h1 p,
-h2 p,
-h3 p,
-h4 p,
-h5 p,
-h6 p {
-    margin-top: 0;
-}
 li p.first {
     display: inline-block;
 }
@@ -380,13 +314,11 @@ table tr th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
-    text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
     border: 1px solid #dfe2e5;
-    text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
@@ -421,12 +353,12 @@ tt {
 
 code {
     background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
 .md-fences {
     margin-bottom: 15px;
     margin-top: 15px;
-    padding: 0.2em 1em;
     padding-top: 8px;
     padding-bottom: 6px;
 }
@@ -436,12 +368,6 @@ code {
   margin-left: -1.3em;
 }
 
-@media screen and (min-width: 914px) {
-    /*body {
-        width: 854px;
-        margin: 0 auto;
-    }*/
-}
 @media print {
     html {
         font-size: 13px;
@@ -554,11 +480,27 @@ header, .context-menu, .megamenu-content, footer{
     --item-hover-bg-color: #E6F0FE;
 }
 
+#md-notification .btn {
+    border: 0;
+}
 
- .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><p><strong><font size=5>周四川</font></strong></p><p><strong>电话</strong>：13301288316&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>职位</strong>：Android软件工程师</p><p><strong>Email</strong>：<a href='mailto:drowtram@163.com' target='_blank' class='url'>drowtram@163.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>工作经验</strong>：5年<span>	</span></p><p><span>	</span></p><h2><a name='header-n5' class='md-header-anchor '></a>个人经历</h2><ul><li><p>2017.3-至今&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市前海洪涛教育科技有限公司北京分公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android应用开发</p><ul><li>负责一对一<strong>跨考考研老师端</strong>开发，吸纳学长老师入驻，知识变现</li><li>负责一对一<strong>跨考考研学生端</strong>开发，通过一对一辅导的方式让考研变得更简单</li><li>负责一对多<strong>锐跨考</strong>客户端开发，专业导师在线授课，一对多教学，助力考研的同学取得好成绩</li></ul></li><li><p>2014.12-2016.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;菠菜科技(北京)科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android应用开发</p><ul><li>负责售彩客户端<strong>悠乐彩</strong>的产品开发，上线小米电视应用商店半年注册用户超过50万</li><li>负责<strong>中超数据采集</strong>客户端开发，便于前方跟对记者实时提交数据到后台</li><li>负责<strong>菠菜球探</strong>客户端开发，通过竟彩大咖荐彩的方式吸纳用户投注竞彩</li></ul></li></ul><ul><li><p>2012.10-2014.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京易视腾科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android应用开发</p><ul><li>负责<strong>米酷电视商城</strong>客户端应用开发，半年预装100W台网络机顶盒以上</li><li>负责北京朝歌数码科技外包项目<strong>视云Launcher</strong>开发</li><li>负责<strong>神马视频</strong>电视客户端应用开发，一年积攒用户超过230W以上</li><li>负责天津未来电视<strong>iCNTV互联网电视</strong>客户端移植和维护，适配到新的终端设备中</li></ul></li><li><p>2012.9.9-2012.9.10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012中国软件开发者大会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24小时不间断开发</p><ul><li>4人合作24小时开发了一款<strong>拍照购</strong>Android手机客户端，获得最佳创意奖</li></ul></li><li><p>2008.9-2012.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 重庆交通大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本科</p><ul><li><p>计算机科学与技术专业</p><p><span>	</span></p></li></ul></li></ul><h2><a name='header-n49' class='md-header-anchor '></a>专业技能</h2><ul><li><p>五年Android开发经验，能够独立完成Android开发</p></li><li><p>熟悉Android架构，熟悉四大组件，掌握Android SDK</p></li><li><p>熟悉Android屏幕适配，图片缩放、异步加载及缓存策略</p></li><li><p>熟悉Http网络协议，JSON解析和XML解析</p></li><li><p>熟悉多线程技术，熟悉进程间通讯AIDL</p></li><li><p>熟悉MVP架构，熟悉Singleton、Factory、Decorator等设计模式</p></li><li><p>熟悉Android UI开发，熟悉动画、控件、布局的使用方法</p></li><li><p>熟悉Android机顶盒开发</p></li><li><p>熟悉第三方直播在线教育SAAS平台接入，包括百家云，保利威视，展示互动等</p></li><li><p>熟悉常用框架的使用，包括AsyncHttpClient、Volley网络通讯，Glide、Picasso图片加载等</p></li><li><p>熟悉SVN、Git等代码管理工具</p><p><span>	</span></p></li></ul><p>&nbsp;</p><h2><a name='header-n75' class='md-header-anchor '></a>项目经历</h2><ul><li><p>2017.10-2018.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;锐跨考&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市前海洪涛教育科技有限公司北京分公司</p><ul><li><p>项目简介</p><p>锐跨考是面向一对多的方式教学，专为广大考研学子量身打造的线上学习备考平台，涵盖有历年考试真题、名师讲解视频课程、学习资料订购等多种功能。学生通过购买老师课程，按照课程安排在直播间听老师讲课和其余同学互动，课后可以观看视频回放加深学习印象，帮助学生顺利考研取得成功。</p></li><li><p>项目职责</p><ul><li>负责跨考考UI框架主界面搭建，使用BottomNavigationView来实现底部导航栏切换</li><li>负责首页模块开发，使用ViewPager实现banner效果</li><li>通过使用SmartRefreshLayout来进行数据刷新和分页加载</li><li>通过使用CoordinatorLayout和AppBarLayout来实现产品详情页滑动顶部指定区域隐藏</li><li>通过修改SuperCalendar源码实现课程日历界面布局效果和功能</li><li>负责集成百家云SDK，实现一对多的上课场景，包含直播回放录播界面的自定义界面布局效果</li><li>负责全局自定义Dialog的实现和自定义分享面板</li><li>负责适配安卓小米MIX2等18:9的全面屏机型</li><li>负责题库答题界面自定义View的封装</li></ul></li></ul></li><li><p>2017.3-2017.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;跨考考研&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市前海洪涛教育科技有限公司北京分公司</p><ul><li><p>项目简介</p><p>跨考考研是面向一对一的教学，针对性更强，根据学员的实际情况和专业特点因材施教，查漏补缺，老师学生交流更紧密，难点考点随时问，答疑解惑更及时。学生可以在线观看专业课直播，也可以缓存课程随时看。</p></li><li><p>项目职责</p><ul><li>通过集成极光推送来实现消息模块的实时数据展示</li><li>通过集成美恰SDK来实现客服功能</li><li>通过集成展示互动SDK，实现用户在线观看老师教学课程讲义和直播间聊天功能</li><li>通过集成保利威视SDK，实现用户课后观看老师之前的课程回放和录播视频</li><li>通过集成友盟SDK实现用户第三方登录和分享功能</li><li>负责产品详情，钱包账户，用户提现，身份认证和二维码扫码上课等功能实现</li></ul></li></ul></li><li><p>2016.2-2016.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;菠菜球探&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;菠菜科技(北京)科技有限公司</p><ul><li><p>项目简介</p><p>菠菜球探是通过自己收集的数据以资讯类信息展示到客户端，提供彩民和球迷浏览。通过真人足彩专家和彩票大神推单的方式，把自己分析的中奖率比较高的足彩串关玩法推荐给彩民，以球币的方式获取回报，进行提现。</p></li><li><p>项目职责</p><ul><li>采用Android 5.0的Material Design设计规范编写</li><li>通过DrawerLayout来实现左侧侧滑菜单的布局实现</li><li>采用ripple动画实现水波纹点击效果</li><li>通过FragmentTabHost来分类展示不同类目</li><li>采用PagerSlidingTabStrip和ViewPager的结合来实现二极分类展示</li><li>封装AsyncHttpClient来和服务端数据交互</li><li>使用第三方开源库Multi_image_selector来实现图库多图选择功能</li><li>通过WebView展示资讯详情界面</li><li>通过shape来自定义圆角drawable来优化图片资源</li><li>使用RecyclerView来做数据列表展示</li></ul></li></ul></li><li><p>2014.12-2016.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;悠乐彩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;菠菜科技(北京)科技有限公司</p><ul><li><p>项目简介</p><p>悠乐彩是公司前期主要经营产品，前期电视端售彩产品app比较缺乏，公司就以电视端为第一拓展渠道开展悠乐彩的推广，和小米应用市场、icntv未来电视合作推广，主要有11选五、大乐透、竞彩等品类，用户可以直接在电视端购买彩票及开奖信息查询，集成有签到领豆，物品兑换等相关功能，后期推出悠乐彩手机App，扩展产品线，后期由于国家政策原因，公司转做足球竞彩资讯分析业务。</p></li><li><p>项目职责</p><ul><li>负责TV端个人中心模块，涵盖有用户登录注册、每日任务、签到、排行榜、积分兑换</li><li>负责整个悠乐彩手机端app开发</li><li>采用WebView集成H5实现快速迭代</li><li>使用Volley进行服务器数据交互</li><li>集成Android4.4最新的沉浸式状态栏效果</li><li>使用Fragment和ViewPager来进行界面切换</li><li>使用Picasso加载网络图片</li></ul></li></ul></li><li><p>2014.3-2014.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;神马视频&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京易视腾科技有限公司</p><ul><li><p>项目简介</p><p>神马视频主要是面向互联网电视和盒子领域而开发的一款OTT视频聚合类应用，包含的主要功能有，在线电影电视剧视频的点播，在线网络电视实时直播，以及电视回看等视频点播等主要功能，也提供了远程应用安装，本地应用管理和收藏，个人中心，WiFi网络管理和WiFi热点共享，个性设置等功能。后期也针对手机和平板做了相应的适配和优化工作。</p></li><li><p>项目职责</p><ul><li>采用Volley实现用户注册登录功能</li><li>使用ImageLoader加载网络图片</li><li>采用LruCache缓存策略</li><li>采用FinalHttp下载推荐应用apk及安装提示</li><li>使用FinalDB来创建管理数据库实现用户收藏的功能</li><li>使用PackageManager获取系统所有已安装的App来展示本地已安装的应用</li><li>采用HttpServer的方式来实现远程安装的操作</li><li>使用WifiManager来实现wifi连接管理和WiFi热点共享功能</li><li>自定义Dialog显示样式给出用户友好提示</li></ul></li></ul></li><li><p>2013.8-2014.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;米酷电视商城2.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京易视腾科技有限公司</p><ul><li><p>项目简介</p><p>针对之前的米酷电视商城推出的全新版本，全新设计，精心布局，风格更加简洁统一，从新针对电视终端设计的大板块化UI，精简了旧版的多余功能，保留的核心功能有应用推荐，排行，游戏，应用，搜索等相关功能，也保留了本地应用管理，用户可以进行卸载更新应用等操作。</p></li><li><p>项目职责</p><ul><li>负责应用在线搜索</li><li>通过HttpURLConnection访问服务器获取Json数据</li><li>采用ImageLoader异步加载应用网络展示图片显示在照片墙上</li><li>负责应用程序列表预览信息展示</li><li>采用AsyncTask执行异步下载apk</li><li>负责部分动画效果</li></ul></li></ul></li></ul></div>
+<div  id='write'  class = 'is-mac'><p><strong><font size=5><span>周四川</span></font></strong></p><p><strong><span>电话</span></strong><span>：13301288316</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span>职位</span></strong><span>：Android软件工程师</span></p><p><strong><span>Email</span></strong><span>：</span><a href='mailto:drowtram@163.com' target='_blank' class='url'>drowtram@163.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span>工作经验</span></strong><span>：7年</span><span>	</span></p><p><span>	</span></p><h2><a name="个人经历" class="md-header-anchor"></a><span>个人经历</span></h2><ul><li><p><span>2017.3-至今</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>深圳市前海洪涛教育科技有限公司北京分公司</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Android应用开发</span></p><ul><li><span>负责一对一</span><strong><span>跨考考研老师端</span></strong><span>开发，吸纳学长老师入驻，知识变现</span></li><li><span>负责一对一</span><strong><span>跨考考研学生端</span></strong><span>开发，通过一对一辅导的方式让考研变得更简单</span></li><li><span>负责一对多</span><strong><span>锐跨考</span></strong><span>客户端开发，专业导师在线授课，一对多教学，助力考研的同学取得好成绩</span></li></ul></li><li><p><span>2014.12-2016.12</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>菠菜科技(北京)科技有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Android应用开发</span></p><ul><li><span>负责售彩客户端</span><strong><span>悠乐彩</span></strong><span>的产品开发，上线小米电视应用商店半年注册用户超过50万</span></li><li><span>负责</span><strong><span>中超数据采集</span></strong><span>客户端开发，便于前方跟对记者实时提交数据到后台</span></li><li><span>负责</span><strong><span>菠菜球探</span></strong><span>客户端开发，通过竟彩大咖荐彩的方式吸纳用户投注竞彩</span></li></ul></li></ul><ul><li><p><span>2012.10-2014.12</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>北京易视腾科技有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Android应用开发</span></p><ul><li><span>负责</span><strong><span>米酷电视商城</span></strong><span>客户端应用开发，半年预装100W台网络机顶盒以上</span></li><li><span>负责北京朝歌数码科技外包项目</span><strong><span>视云Launcher</span></strong><span>开发</span></li><li><span>负责</span><strong><span>神马视频</span></strong><span>电视客户端应用开发，一年积攒用户超过230W以上</span></li><li><span>负责天津未来电视</span><strong><span>iCNTV互联网电视</span></strong><span>客户端移植和维护，适配到新的终端设备中</span></li></ul></li><li><p><span>2012.9.9-2012.9.10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2012中国软件开发者大会</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>24小时不间断开发</span></p><ul><li><span>4人合作24小时开发了一款</span><strong><span>拍照购</span></strong><span>Android手机客户端，获得最佳创意奖</span></li></ul></li><li><p><span>2008.9-2012.7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 重庆交通大学</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>本科</span></p><ul><li><p><span>计算机科学与技术专业</span></p><p><span>	</span></p></li></ul></li></ul><h2><a name="专业技能" class="md-header-anchor"></a><span>专业技能</span></h2><ul><li><p><span>七年Android开发经验，能够独立完成Android开发</span></p></li><li><p><span>熟悉Android架构，熟悉四大组件，掌握Android SDK</span></p></li><li><p><span>熟悉Android屏幕适配，图片缩放、异步加载及缓存策略</span></p></li><li><p><span>熟悉Http网络协议，JSON解析和XML解析</span></p></li><li><p><span>熟悉多线程技术，熟悉进程间通讯AIDL</span></p></li><li><p><span>熟悉MVP架构，熟悉Singleton、Factory、Decorator等设计模式</span></p></li><li><p><span>熟悉Android UI开发，熟悉动画、控件、布局的使用方法</span></p></li><li><p><span>熟悉Android机顶盒开发</span></p></li><li><p><span>熟悉常用框架的使用，包括Okhttp网络通讯，RxJava异步事件处理、Glide、Picasso图片加载等</span></p></li><li><p><span>熟悉SVN、Git等代码管理工具</span></p></li><li><p><span>熟悉Kotlin，并在项目中应用</span></p><p><span>	</span></p></li></ul><p>&nbsp;</p><h2><a name="项目经历" class="md-header-anchor"></a><span>项目经历</span></h2><ul><li><p><span>跨考考研</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>深圳市前海洪涛教育科技有限公司北京分公司</span></p><ul><li><p><span>项目简介</span></p><p><span>跨考考研是面向一对一的教学，针对性更强，根据学员的实际情况和专业特点因材施教，查漏补缺，老师学生交流更紧密，难点考点随时问，答疑解惑更及时。学生可以在线观看专业课直播，也可以缓存课程随时看。</span></p></li><li><p><span>项目职责</span></p><ul><li><span>采用MVP模式来进行主体架构搭建</span></li><li><span>采用BottomNavigationView实现底部导航栏，采用Badge实现消息气泡通知</span></li><li><span>负责首页、学习中心、工作室、搜索等模块的开发</span></li><li><span>集成百家云SDK，实现一对一和一对多的上课场景，包含直播回放界面</span></li><li><span>集成保利威视SDK，实现录播课模块的开发</span></li><li><span>全面采用ConstraintLayout布局，替换常用的相对和线性布局，减少布局嵌套层级</span></li><li><span>采用style设置全局默认背景色，审查所有界面的布局绘制，减少GPU不必要的过度绘制</span></li><li><span>采用单例模式创建统一全局的线程池，避免线程过多抢占cpu资源</span></li><li><span>集成LeakCanary在开发测试阶段检测内存泄漏的问题</span></li><li><span>集成Bugly，检测线上环境的崩溃信息</span></li><li><span>统一全局的图片加载库Glide，图片缓存统一管理，提升缓存利用率</span></li><li><span>本地较大的图片资源转换为WebP格式，压缩图片大小和apk包体积</span></li></ul></li></ul></li></ul><ul><li><p><span>锐跨考</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>深圳市前海洪涛教育科技有限公司北京分公司</span></p><ul><li><p><span>项目简介</span></p><p><span>锐跨考是面向一对多的方式教学，专为广大考研学子量身打造的线上学习备考平台，涵盖有历年考试真题、名师讲解视频课程、学习资料订购等多种功能。学生通过购买老师课程，按照课程安排在直播间听老师讲课和其余同学互动，课后可以观看视频回放加深学习印象，帮助学生顺利考研取得成功。</span></p></li><li><p><span>项目职责</span></p><ul><li><span>负责锐跨考UI框架主界面搭建，使用BottomNavigationView来实现底部导航栏切换</span></li><li><span>负责首页模块开发，使用ViewPager实现banner效果</span></li><li><span>通过使用SmartRefreshLayout来进行数据刷新和分页加载</span></li><li><span>通过使用CoordinatorLayout和AppBarLayout来实现产品详情页滑动顶部指定区域隐藏</span></li><li><span>通过修改SuperCalendar源码实现课程日历界面布局效果和功能</span></li><li><span>负责集成百家云SDK，实现一对多的上课场景，包含直播回放录播界面的自定义界面布局效果</span></li><li><span>负责全局自定义Dialog的实现和自定义分享面板</span></li><li><span>负责适配安卓小米MIX2等18:9的全面屏机型</span></li><li><span>负责题库答题界面自定义View的封装</span></li></ul></li></ul></li></ul><ul><li><p><span>菠菜球探</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>菠菜科技(北京)科技有限公司</span></p><ul><li><p><span>项目简介</span></p><p><span>菠菜球探是通过自己收集的数据以资讯类信息展示到客户端，提供彩民和球迷浏览。通过真人足彩专家和彩票大神推单的方式，把自己分析的中奖率比较高的足彩串关玩法推荐给彩民，以球币的方式获取回报，进行提现。</span></p></li><li><p><span>项目职责</span></p><ul><li><span>采用Android 5.0的Material Design设计规范编写</span></li><li><span>通过DrawerLayout来实现左侧侧滑菜单的布局实现</span></li><li><span>采用ripple动画实现水波纹点击效果</span></li><li><span>通过FragmentTabHost来分类展示不同类目</span></li><li><span>采用PagerSlidingTabStrip和ViewPager的结合来实现二极分类展示</span></li><li><span>封装AsyncHttpClient来和服务端数据交互</span></li><li><span>使用第三方开源库Multi_image_selector来实现图库多图选择功能</span></li><li><span>通过WebView展示资讯详情界面</span></li><li><span>通过shape来自定义圆角drawable来优化图片资源</span></li><li><span>使用RecyclerView来做数据列表展示</span></li></ul></li></ul></li></ul><ul><li><p><span>悠乐彩</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>菠菜科技(北京)科技有限公司</span></p><ul><li><p><span>项目简介</span></p><p><span>悠乐彩是公司前期主要经营产品，前期电视端售彩产品app比较缺乏，公司就以电视端为第一拓展渠道开展悠乐彩的推广，和小米应用市场、icntv未来电视合作推广，主要有11选五、大乐透、竞彩等品类，用户可以直接在电视端购买彩票及开奖信息查询，集成有签到领豆，物品兑换等相关功能，后期推出悠乐彩手机App，扩展产品线，后期由于国家政策原因，公司转做足球竞彩资讯分析业务。</span></p></li><li><p><span>项目职责</span></p><ul><li><span>负责TV端个人中心模块，涵盖有用户登录注册、每日任务、签到、排行榜、积分兑换</span></li><li><span>负责整个悠乐彩手机端app开发</span></li><li><span>采用WebView集成H5实现快速迭代</span></li><li><span>使用Volley进行服务器数据交互</span></li><li><span>集成Android4.4最新的沉浸式状态栏效果</span></li><li><span>使用Fragment和ViewPager来进行界面切换</span></li><li><span>使用Picasso加载网络图片</span></li></ul></li></ul></li></ul><ul><li><p><span>神马视频</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>北京易视腾科技有限公司</span></p><ul><li><p><span>项目简介</span></p><p><span>神马视频主要是面向互联网电视和盒子领域而开发的一款OTT视频聚合类应用，包含的主要功能有，在线电影电视剧视频的点播，在线网络电视实时直播，以及电视回看等视频点播等主要功能，也提供了远程应用安装，本地应用管理和收藏，个人中心，WiFi网络管理和WiFi热点共享，个性设置等功能。后期也针对手机和平板做了相应的适配和优化工作。</span></p></li><li><p><span>项目职责</span></p><ul><li><span>采用Volley实现用户注册登录功能</span></li><li><span>使用ImageLoader加载网络图片</span></li><li><span>采用LruCache缓存策略</span></li><li><span>采用FinalHttp下载推荐应用apk及安装提示</span></li><li><span>使用FinalDB来创建管理数据库实现用户收藏的功能</span></li><li><span>使用PackageManager获取系统所有已安装的App来展示本地已安装的应用</span></li><li><span>采用HttpServer的方式来实现远程安装的操作</span></li><li><span>使用WifiManager来实现wifi连接管理和WiFi热点共享功能</span></li><li><span>自定义Dialog显示样式给出用户友好提示</span></li></ul></li></ul></li></ul><ul><li><p><span>米酷电视商城2.0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>北京易视腾科技有限公司</span></p><ul><li><p><span>项目简介</span></p><p><span>针对之前的米酷电视商城推出的全新版本，全新设计，精心布局，风格更加简洁统一，从新针对电视终端设计的大板块化UI，精简了旧版的多余功能，保留的核心功能有应用推荐，排行，游戏，应用，搜索等相关功能，也保留了本地应用管理，用户可以进行卸载更新应用等操作。</span></p></li><li><p><span>项目职责</span></p><ul><li><span>负责应用在线搜索</span></li><li><span>通过HttpURLConnection访问服务器获取Json数据</span></li><li><span>采用ImageLoader异步加载应用网络展示图片显示在照片墙上</span></li><li><span>负责应用程序列表预览信息展示</span></li><li><span>采用AsyncTask执行异步下载apk</span></li><li><span>负责部分动画效果</span></li></ul></li></ul></li></ul></div>
 </body>
 </html>
